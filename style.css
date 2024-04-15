@@ -20,13 +20,18 @@ body {
 .navbar {
     background-color: #000;
     color: #fff;
-    padding: 15px 0;
+    padding: 10px 0;
+    position: fixed; /* Sabit bir konum */
+    width: 100%; /* Genişlik */
+    top: 0; /* Sayfanın en üstüne yerleştirme */
+    z-index: 1000; /* Diğer öğelerin üzerinde olması */
 }
 
 .logo {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px; /* Yazı boyutunu küçült */
     text-decoration: none;
+    margin-right: 20px; /* Logo ile diğer menü öğeleri arasında boşluk bırak */
 }
 
 .nav-menu {
@@ -37,7 +42,7 @@ body {
 
 .nav-menu li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px; /* Menü öğeleri arasında boşluk bırak */
 }
 
 .nav-menu li:last-child {
@@ -49,9 +54,16 @@ body {
     color: #fff;
 }
 
+.auth-buttons {
+    position: absolute; /* Sabit bir konum */
+    top: 50%; /* Yükseklikte ortalama */
+    right: 20px; /* Sağ kenara hizala */
+    transform: translateY(-50%); /* Dikeyde ortalama */
+}
+
 /* Auth buttons */
 .auth-buttons .btn {
-    padding: 10px 20px;
+    padding: 8px 15px; /* Buton boyutlarını küçült */
     background-color: #e50914;
     color: #fff;
     border: none;
@@ -61,6 +73,7 @@ body {
 
 /* Hero */
 .hero {
+    margin-top: 60px; /* Navbar ile hero arasında boşluk bırak */
     color: #fff;
     padding: 100px 0;
     text-align: center;
