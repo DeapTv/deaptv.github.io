@@ -5,9 +5,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background.png'); /* Sayfa arka planı görüntüsü */
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #1a1a1a; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    background-size: cover; /* Arka plan resminin sayfanın tamamını kaplaması */
+    background-repeat: no-repeat; /* Arka plan resminin tekrar etmemesi */
+    background-position: center; /* Arka plan resminin ortalanması */
+    background-image: url('hero-background.jpg'); /* Arka plan resmi */
+    
 }
 
 .container {
@@ -18,7 +22,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #000;
+    background-color: transparent; /* Arka plan rengi */
     color: #fff;
     padding: 10px 0;
     position: fixed; /* Sabit bir konum */
@@ -29,29 +33,8 @@ body {
 
 .logo {
     color: #fff;
-    font-size: 20px; /* Yazı boyutunu küçült */
+    font-size: 30px; /* Yazı boyutu */
     text-decoration: none;
-    margin-right: 20px; /* Logo ile diğer menü öğeleri arasında boşluk bırak */
-}
-
-.nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    display: inline-block;
-    margin-right: 10px; /* Menü öğeleri arasında boşluk bırak */
-}
-
-.nav-menu li:last-child {
-    margin-right: 0;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    color: #fff;
 }
 
 .auth-buttons {
@@ -63,20 +46,27 @@ body {
 
 /* Auth buttons */
 .auth-buttons .btn {
-    padding: 8px 15px; /* Buton boyutlarını küçült */
-    background-color: #e50914;
+    padding: 10px 20px; /* Buton boyutları */
+    background-color: #e50914; /* Arka plan rengi */
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Köşe yuvarlama */
     text-decoration: none;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.auth-buttons .btn:hover {
+    background-color: #ff0041; /* Hover durumunda arka plan rengi */
 }
 
 /* Hero */
 .hero {
-    margin-top: 60px; /* Navbar ile hero arasında boşluk bırak */
-    color: #fff;
+    background-image: url('hero-background.jpg'); /* Arka plan resmi */
+    background-size: cover;
+    background-position: center;
     padding: 100px 0;
     text-align: center;
+    color: #fff;
 }
 
 .hero-title {
@@ -90,25 +80,47 @@ body {
 }
 
 .email-form input[type="email"] {
-    padding: 10px;
+    padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Köşe yuvarlama */
     width: 300px;
+    margin-right: 10px;
 }
 
 .email-form button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #e50914;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Köşe yuvarlama */
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.email-form button:hover {
+    background-color: #ff0041; /* Hover durumunda arka plan rengi */
 }
 
 /* Footer */
 footer {
     background-color: #000;
     color: #fff;
-    padding: 20px 0;
+    padding: 16px 0;
     text-align: center;
+    margin: 0 ;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.footer-container p::before {
+    content: "\00A9"; /* © sembolü */
+    margin-right: 5px;
 }
