@@ -10,7 +10,7 @@ body {
     background-size: cover; /* Arka plan resminin sayfanın tamamını kaplaması */
     background-repeat: no-repeat; /* Arka plan resminin tekrar etmemesi */
     background-position: center; /* Arka plan resminin ortalanması */
-    background-image: url('hero-background.jpg'); /* Arka plan resmi */
+    background-image: url('background.png'); /* Arka plan resmi */
     
 }
 
