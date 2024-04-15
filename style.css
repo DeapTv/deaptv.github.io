@@ -1,12 +1,29 @@
 /* style.css */
 
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000; /* Siyah arka plan */
-    color: #ff4d4d; /* Kırmızı yazı rengi */
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .nav-menu {
@@ -26,75 +43,58 @@
 
 .nav-menu li a {
     text-decoration: none;
-    color: #ff4d4d; /* Kırmızı link rengi */
-    transition: color 0.3s ease; /* Renk geçişi animasyonu */
-}
-
-.nav-menu li a:hover {
-    color: #fff; /* Beyaz link rengi hover durumunda */
+    color: #fff;
 }
 
 /* Auth buttons */
-.auth-buttons {
-    display: flex;
-    align-items: center;
-}
-
-.btn {
+.auth-buttons .btn {
     padding: 10px 20px;
-    text-decoration: none;
+    background-color: #e50914;
     color: #fff;
+    border: none;
     border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-signup {
-    background-color: #ff4d4d; /* Kırmızı buton arka planı */
-    margin-left: auto;
-    margin-right: 20px;
-    transition: background-color 0.3s ease; /* Renk geçişi animasyonu */
-}
-
-.btn-signup:hover {
-    background-color: #e50000; /* Kırmızı buton arka planı hover durumunda */
+    text-decoration: none;
 }
 
 /* Hero */
 .hero {
-    background-color: #ff4d4d; /* Kırmızı arka plan */
-    padding: 50px 0;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
     text-align: center;
-    color: #fff; /* Beyaz yazı rengi */
 }
 
 .hero-title {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
 .hero-subtitle {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 .email-form input[type="email"] {
     padding: 10px;
-    border: 1px solid #fff; /* Beyaz kenarlık */
+    border: none;
     border-radius: 5px;
     width: 300px;
-    margin-right: 10px;
 }
 
 .email-form button {
     padding: 10px 20px;
-    background-color: #000; /* Siyah buton arka planı */
-    color: #fff; /* Beyaz buton yazı rengi */
+    background-color: #e50914;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Renk geçişi animasyonu */
 }
 
-.email-form button:hover {
-    background-color: #333; /* Siyah buton arka planı hover durumunda */
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
