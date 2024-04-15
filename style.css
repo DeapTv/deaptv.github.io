@@ -5,6 +5,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('background.png'); /* Sayfa arka planı görüntüsü */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -58,8 +61,6 @@ body {
 
 /* Hero */
 .hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
     color: #fff;
     padding: 100px 0;
     text-align: center;
