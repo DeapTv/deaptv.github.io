@@ -1,0 +1,34 @@
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #333; /* Neon yeşili arka plan rengi */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Neon etkisi için gölge */
+}
+
+.error-message {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0ff; /* Parlak neon yeşili düğme rengi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Yazıya neon efekti */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Düğmeye neon efekti */
+
+}
+
+body {
+    background-color: #334; /* Neon yeşili arka plan rengi */
+}
+
